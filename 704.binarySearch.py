@@ -9,7 +9,8 @@ class Solution:
         mid = end // 2
 
         for i in range(len(nums)):
-            print(nums[mid], start,mid, end, "G:" + str(nums[mid] > target), target)
+            print(nums[mid], start, mid, end, "G:" +
+                  str(nums[mid] > target), target)
 
             if nums[mid] == target:
                 found = True
