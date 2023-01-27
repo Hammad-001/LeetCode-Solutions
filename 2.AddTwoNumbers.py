@@ -4,6 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+# # Solution 1
 class Solution:
     def addTwoNumbers(self, l1, l2):
         root = ListNode(0)
@@ -26,28 +27,29 @@ class Solution:
 
         return root.next
 
-class Solution:
-    def addTwoNumbers(self, l1, l2):
-        first_num, second_num = "", ""
+# # Solution 2
+# class Solution:
+#     def addTwoNumbers(self, l1, l2):
+#         first_num, second_num = "", ""
 
-        while l1 != None:
-            first_num += str(l1.val)
-            l1 = l1.next
+#         while l1 != None:
+#             first_num += str(l1.val)
+#             l1 = l1.next
 
-        while l2 != None:
-            second_num += str(l2.val)
-            l2 = l2.next
+#         while l2 != None:
+#             second_num += str(l2.val)
+#             l2 = l2.next
 
-        summation = list(str(int(first_num) + int(second_num)))
+#         summation = list(str(int(first_num) + int(second_num)))
 
-        digit_node = None
+#         digit_node = None
 
-        for index, value in enumerate(summation):
-            
-            if index == 0:
-                digit_node =  ListNode(val=value)
-                continue
+#         for index, value in enumerate(summation):
 
-            digit_node =  ListNode(val=value, next=digit_node)
+#             if index == 0:
+#                 digit_node =  ListNode(val=value)
+#                 continue
+
+#             digit_node =  ListNode(val=value, next=digit_node)
         
-        return digit_node
+#         return digit_node
